@@ -14,10 +14,13 @@
     "examples": "npm run examples --workspaces --if-present",
     "preinstall": "npm run checkNpmVersion",
     "postinstall": "npm run build --workspaces",
+    "install-browser-deps": "npm install webdriverio @vitest/browser web-streams-polyfill",
     "prepare": "git config --local core.hooksPath .githooks",
     "prettier": "prettier --write \"./**/*.{js,json,md,ts,yml}\"",
-    "sort-package-json": "sort-package-json \"package.json\" \"packages/*/package.json\"",
-    "install-browser-deps": "npm install webdriverio @vitest/browser web-streams-polyfill"
+    "sort-package-json": "sort-package-json \"package.json\" \"packages/*/package.json\""
+  },
+  "dependencies": {
+    "web-streams-polyfill": "^4.0.0"
   },
   "devDependencies": {
     "@types/estree": "^1.0.1",
@@ -41,7 +44,7 @@
     "eslint-plugin-simple-import-sort": "7.0.0",
     "eslint-plugin-sonarjs": "0.19.0",
     "lint-staged": "13.0.3",
-    "lockfile-lint-api": "^5.5.1",
+    "lockfile-lint-api": "^5.9.1",
     "prettier": "2.7.1",
     "sort-package-json": "1.57.0",
     "tape": "5.6.0",
@@ -52,23 +55,23 @@
     "vite-plugin-node-polyfills": "^0.21.0",
     "vite-plugin-top-level-await": "^1.4.1",
     "vite-plugin-wasm": "^3.3.0",
-    "vitest": "^1.2.2"
+    "vitest": "^1.6.0"
   },
   "peerDependencies": {
     "@vitest/browser": "^1.5.0",
-    "webdriverio": "^8.36.0"
+    "webdriverio": "^8.38.0"
   },
   "peerDependenciesMeta": {
-    "playwright": {
-      "optional": true
-    },
-    "webdriverio": {
-      "optional": true
-    },
     "@vitest/browser": {
       "optional": true
     },
     "kzg-wasm": {
+      "optional": true
+    },
+    "playwright": {
+      "optional": true
+    },
+    "webdriverio": {
       "optional": true
     }
   },

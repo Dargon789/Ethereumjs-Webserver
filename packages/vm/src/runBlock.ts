@@ -1,7 +1,7 @@
 import { Block } from '@ethereumjs/block'
 import { ConsensusType, Hardfork } from '@ethereumjs/common'
 import { RLP } from '@ethereumjs/rlp'
-import { StatelessVerkleStateManager } from '@ethereumjs/statemanager'
+import { StatelessVerkleStateManager, getTreeIndexesForStorageSlot } from '@ethereumjs/statemanager'
 import { Trie } from '@ethereumjs/trie'
 import { TransactionType } from '@ethereumjs/tx'
 import {
@@ -132,7 +132,12 @@ export async function runBlock(this: VM, opts: RunBlockOpts): Promise<RunBlockRe
     if (this.DEBUG) {
       debug(`Initializing StatelessVerkleStateManager executionWitness`)
     }
+    if (clearCache) {
+      ;(this._opts.stateManager as StatelessVerkleStateManager).clearCaches()
+    }
+
     ;(this._opts.stateManager as StatelessVerkleStateManager).initVerkleExecutionWitness(
+      block.header.number,
       block.executionWitness
     )
   } else {
@@ -436,36 +441,63 @@ export async function accumulateParentBlockHash(
   const historyAddress = Address.fromString(
     bigIntToHex(this.common.param('vm', 'historyStorageAddress'))
   )
+  const historyServeWindow = this.common.param('vm', 'historyServeWindow')
 
-  if ((await this.stateManager.getAccount(historyAddress)) === undefined) {
-    await this.evm.journal.putAccount(historyAddress, new Account())
-  }
-
-  async function putBlockHash(vm: VM, hash: Uint8Array, number: bigint) {
-    const key = setLengthLeft(bigIntToBytes(number), 32)
-    await vm.stateManager.putContractStorage(historyAddress, key, hash)
-  }
-  await putBlockHash(this, parentHash, currentBlockNumber - BIGINT_1)
-
-  // Check if we are on the fork block
+  // Is this the fork block?
   const forkTime = this.common.eipTimestamp(2935)
   if (forkTime === null) {
     throw new Error('EIP 2935 should be activated by timestamp')
   }
-  const parentBlock = await this.blockchain.getBlock(parentHash)
 
-  if (parentBlock.header.timestamp < forkTime) {
-    let ancestor = parentBlock
-    const range = this.common.param('vm', 'minHistoryServeWindow')
-    for (let i = 0; i < Number(range) - 1; i++) {
-      if (ancestor.header.number === BIGINT_0) {
-        break
-      }
-
-      ancestor = await this.blockchain.getBlock(ancestor.header.parentHash)
-      await putBlockHash(this, ancestor.hash(), ancestor.header.number)
+  // getAccount with historyAddress will throw error as witnesses are not bundeled
+  // but we need to put account so as to query later for slot
+  try {
+    if ((await this.stateManager.getAccount(historyAddress)) === undefined) {
+      const emptyHistoryAcc = new Account(BigInt(1))
+      await this.evm.journal.putAccount(historyAddress, emptyHistoryAcc)
     }
+  } catch (_e) {
+    const emptyHistoryAcc = new Account(BigInt(1))
+    await this.evm.journal.putAccount(historyAddress, emptyHistoryAcc)
   }
+
+  async function putBlockHash(vm: VM, hash: Uint8Array, number: bigint) {
+    // ringKey is the key the hash is actually put in (it is a ring buffer)
+    const ringKey = number % historyServeWindow
+
+    // generate access witness
+    if (vm.common.isActivatedEIP(6800) === true) {
+      const { treeIndex, subIndex } = getTreeIndexesForStorageSlot(ringKey)
+      // just create access witnesses without charging for the gas
+      ;(
+        vm.stateManager as StatelessVerkleStateManager
+      ).accessWitness!.touchAddressOnWriteAndComputeGas(historyAddress, treeIndex, subIndex)
+    }
+    const key = setLengthLeft(bigIntToBytes(ringKey), 32)
+    await vm.stateManager.putContractStorage(historyAddress, key, hash)
+  }
+  await putBlockHash(this, parentHash, currentBlockNumber - BIGINT_1)
+
+  // in stateless execution parentBlock is not in blockchain but in chain's blockCache
+  // need to move the blockCache to the blockchain, in any case we can ignore forkblock
+  // which is where we need this code segment
+  try {
+    const parentBlock = await this.blockchain.getBlock(parentHash)
+
+    // If on the fork block, store the old block hashes as well
+    if (parentBlock.header.timestamp < forkTime) {
+      let ancestor = parentBlock
+      for (let i = 0; i < Number(historyServeWindow) - 1; i++) {
+        if (ancestor.header.number === BIGINT_0) {
+          break
+        }
+
+        ancestor = await this.blockchain.getBlock(ancestor.header.parentHash)
+        await putBlockHash(this, ancestor.hash(), ancestor.header.number)
+      }
+    }
+    // eslint-disable-next-line no-empty
+  } catch (_e) {}
 }
 
 export async function accumulateParentBeaconBlockRoot(
@@ -675,7 +707,7 @@ export async function rewardAccount(
 
   if (common?.isActivatedEIP(6800) === true) {
     // use this utility to build access but the computed gas is not charged and hence free
-    ;(evm.stateManager as StatelessVerkleStateManager).accessWitness!.touchTxExistingAndComputeGas(
+    ;(evm.stateManager as StatelessVerkleStateManager).accessWitness!.touchTxTargetAndComputeGas(
       address,
       { sendsValue: true }
     )
