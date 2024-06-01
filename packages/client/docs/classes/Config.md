@@ -28,7 +28,7 @@
 - [execCommon](Config.md#execcommon)
 - [execution](Config.md#execution)
 - [extIP](Config.md#extip)
-- [ignoreStatelessInvalidExecs](Config.md#ignorestatelessinvalidexecs)
+
 - [isSingleNode](Config.md#issinglenode)
 - [key](Config.md#key)
 - [lastSyncDate](Config.md#lastsyncdate)
@@ -43,7 +43,7 @@
 - [maxPerRequest](Config.md#maxperrequest)
 - [maxRangeBytes](Config.md#maxrangebytes)
 - [maxStorageRange](Config.md#maxstoragerange)
-- [metrics](Config.md#metrics)
+
 - [minPeers](Config.md#minpeers)
 - [mine](Config.md#mine)
 - [minerCoinbase](Config.md#minercoinbase)
@@ -61,7 +61,7 @@
 - [skeletonSubchainMergeMinimum](Config.md#skeletonsubchainmergeminimum)
 - [snapAvailabilityDepth](Config.md#snapavailabilitydepth)
 - [snapTransitionSafeDepth](Config.md#snaptransitionsafedepth)
-- [startExecution](Config.md#startexecution)
+
 - [statelessVerkle](Config.md#statelessverkle)
 - [storageCache](Config.md#storagecache)
 - [syncTargetHeight](Config.md#synctargetheight)
@@ -130,7 +130,7 @@
 
 #### Defined in
 
-[config.ts:471](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L471)
+
 
 ## Properties
 
@@ -140,7 +140,7 @@
 
 #### Defined in
 
-[config.ts:417](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L417)
+
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 #### Defined in
 
-[config.ts:426](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L426)
+
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-[config.ts:403](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L403)
+
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-[config.ts:464](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L464)
+
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-[config.ts:419](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L419)
+
 
 ___
 
@@ -190,7 +190,7 @@ ___
 
 #### Defined in
 
-[config.ts:401](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L401)
+
 
 ___
 
@@ -200,7 +200,7 @@ ___
 
 #### Defined in
 
-[config.ts:421](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L421)
+
 
 ___
 
@@ -210,7 +210,7 @@ ___
 
 #### Defined in
 
-[config.ts:422](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L422)
+
 
 ___
 
@@ -220,7 +220,7 @@ ___
 
 #### Defined in
 
-[config.ts:423](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L423)
+
 
 ___
 
@@ -230,7 +230,7 @@ ___
 
 #### Defined in
 
-[config.ts:414](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L414)
+
 
 ___
 
@@ -240,7 +240,7 @@ ___
 
 #### Defined in
 
-[config.ts:447](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L447)
+
 
 ___
 
@@ -248,29 +248,6 @@ ___
 
 • `Readonly` **engineNewpayloadMaxExecute**: `number`
 
-#### Defined in
-
-[config.ts:440](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L440)
-
-___
-
-### engineNewpayloadMaxTxsExecute
-
-• `Readonly` **engineNewpayloadMaxTxsExecute**: `number`
-
-#### Defined in
-
-[config.ts:441](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L441)
-
-___
-
-### engineParentLookupMaxDepth
-
-• `Readonly` **engineParentLookupMaxDepth**: `number`
-
-#### Defined in
-
-[config.ts:439](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L439)
 
 ___
 
@@ -283,7 +260,7 @@ components of the client
 
 #### Defined in
 
-[config.ts:353](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L353)
+
 
 ___
 
@@ -293,7 +270,7 @@ ___
 
 #### Defined in
 
-[config.ts:465](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L465)
+
 
 ___
 
@@ -303,7 +280,7 @@ ___
 
 #### Defined in
 
-[config.ts:415](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L415)
+
 
 ___
 
@@ -313,27 +290,7 @@ ___
 
 #### Defined in
 
-[config.ts:405](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L405)
 
-___
-
-### ignoreStatelessInvalidExecs
-
-• `Readonly` **ignoreStatelessInvalidExecs**: `string` \| `boolean`
-
-#### Defined in
-
-[config.ts:453](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L453)
-
-___
-
-### isSingleNode
-
-• `Readonly` **isSingleNode**: `boolean`
-
-#### Defined in
-
-[config.ts:425](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L425)
 
 ___
 
@@ -343,7 +300,7 @@ ___
 
 #### Defined in
 
-[config.ts:402](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L402)
+
 
 ___
 
@@ -355,7 +312,7 @@ lastSyncDate in ms
 
 #### Defined in
 
-[config.ts:458](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L458)
+
 
 ___
 
@@ -365,7 +322,7 @@ ___
 
 #### Defined in
 
-[config.ts:456](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L456)
+
 
 ___
 
@@ -375,7 +332,7 @@ ___
 
 #### Defined in
 
-[config.ts:400](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L400)
+
 
 ___
 
@@ -385,7 +342,7 @@ ___
 
 #### Defined in
 
-[config.ts:397](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L397)
+
 
 ___
 
@@ -395,7 +352,7 @@ ___
 
 #### Defined in
 
-[config.ts:434](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L434)
+
 
 ___
 
@@ -405,7 +362,7 @@ ___
 
 #### Defined in
 
-[config.ts:410](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L410)
+
 
 ___
 
@@ -415,7 +372,7 @@ ___
 
 #### Defined in
 
-[config.ts:411](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L411)
+
 
 ___
 
@@ -425,7 +382,7 @@ ___
 
 #### Defined in
 
-[config.ts:436](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L436)
+
 
 ___
 
@@ -435,7 +392,7 @@ ___
 
 #### Defined in
 
-[config.ts:413](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L413)
+
 
 ___
 
@@ -445,7 +402,7 @@ ___
 
 #### Defined in
 
-[config.ts:409](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L409)
+
 
 ___
 
@@ -455,7 +412,7 @@ ___
 
 #### Defined in
 
-[config.ts:433](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L433)
+
 
 ___
 
@@ -465,17 +422,7 @@ ___
 
 #### Defined in
 
-[config.ts:435](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L435)
 
-___
-
-### metrics
-
-• `Readonly` **metrics**: `undefined` \| `PrometheusMetrics`
-
-#### Defined in
-
-[config.ts:469](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L469)
 
 ___
 
@@ -485,7 +432,7 @@ ___
 
 #### Defined in
 
-[config.ts:412](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L412)
+
 
 ___
 
@@ -495,7 +442,7 @@ ___
 
 #### Defined in
 
-[config.ts:424](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L424)
+
 
 ___
 
@@ -505,7 +452,7 @@ ___
 
 #### Defined in
 
-[config.ts:427](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L427)
+
 
 ___
 
@@ -515,7 +462,7 @@ ___
 
 #### Defined in
 
-[config.ts:406](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L406)
+
 
 ___
 
@@ -525,7 +472,7 @@ ___
 
 #### Defined in
 
-[config.ts:416](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L416)
+
 
 ___
 
@@ -535,7 +482,7 @@ ___
 
 #### Defined in
 
-[config.ts:404](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L404)
+
 
 ___
 
@@ -545,7 +492,7 @@ ___
 
 #### Defined in
 
-[config.ts:445](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L445)
+
 
 ___
 
@@ -555,7 +502,7 @@ ___
 
 #### Defined in
 
-[config.ts:437](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L437)
+
 
 ___
 
@@ -565,7 +512,7 @@ ___
 
 #### Defined in
 
-[config.ts:430](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L430)
+
 
 ___
 
@@ -575,7 +522,7 @@ ___
 
 #### Defined in
 
-[config.ts:449](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L449)
+
 
 ___
 
@@ -585,7 +532,7 @@ ___
 
 #### Defined in
 
-[config.ts:407](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L407)
+
 
 ___
 
@@ -595,7 +542,7 @@ ___
 
 #### Defined in
 
-[config.ts:467](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L467)
+
 
 ___
 
@@ -607,7 +554,7 @@ Client is in the process of shutting down
 
 #### Defined in
 
-[config.ts:462](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L462)
+
 
 ___
 
@@ -617,7 +564,7 @@ ___
 
 #### Defined in
 
-[config.ts:431](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L431)
+
 
 ___
 
@@ -627,7 +574,7 @@ ___
 
 #### Defined in
 
-[config.ts:432](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L432)
+
 
 ___
 
@@ -637,7 +584,7 @@ ___
 
 #### Defined in
 
-[config.ts:442](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L442)
+
 
 ___
 
@@ -647,17 +594,7 @@ ___
 
 #### Defined in
 
-[config.ts:443](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L443)
 
-___
-
-### startExecution
-
-• `Readonly` **startExecution**: `boolean`
-
-#### Defined in
-
-[config.ts:452](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L452)
 
 ___
 
@@ -667,7 +604,7 @@ ___
 
 #### Defined in
 
-[config.ts:451](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L451)
+
 
 ___
 
@@ -677,7 +614,7 @@ ___
 
 #### Defined in
 
-[config.ts:418](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L418)
+
 
 ___
 
@@ -689,7 +626,7 @@ Best known block height
 
 #### Defined in
 
-[config.ts:460](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L460)
+
 
 ___
 
@@ -699,7 +636,7 @@ ___
 
 #### Defined in
 
-[config.ts:438](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L438)
+
 
 ___
 
@@ -709,7 +646,7 @@ ___
 
 #### Defined in
 
-[config.ts:455](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L455)
+
 
 ___
 
@@ -719,7 +656,7 @@ ___
 
 #### Defined in
 
-[config.ts:398](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L398)
+
 
 ___
 
@@ -729,7 +666,7 @@ ___
 
 #### Defined in
 
-[config.ts:420](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L420)
+
 
 ___
 
@@ -739,7 +676,7 @@ ___
 
 #### Defined in
 
-[config.ts:408](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L408)
+
 
 ___
 
@@ -749,7 +686,7 @@ ___
 
 #### Defined in
 
-[config.ts:448](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L448)
+
 
 ___
 
@@ -759,7 +696,7 @@ ___
 
 #### Defined in
 
-[config.ts:399](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L399)
+
 
 ___
 
@@ -769,7 +706,7 @@ ___
 
 #### Defined in
 
-[config.ts:428](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L428)
+
 
 ___
 
@@ -779,7 +716,7 @@ ___
 
 #### Defined in
 
-[config.ts:368](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L368)
+
 
 ___
 
@@ -789,7 +726,7 @@ ___
 
 #### Defined in
 
-[config.ts:355](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L355)
+
 
 ___
 
@@ -799,7 +736,7 @@ ___
 
 #### Defined in
 
-[config.ts:370](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L370)
+
 
 ___
 
@@ -809,7 +746,7 @@ ___
 
 #### Defined in
 
-[config.ts:358](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L358)
+
 
 ___
 
@@ -819,7 +756,7 @@ ___
 
 #### Defined in
 
-[config.ts:372](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L372)
+
 
 ___
 
@@ -829,7 +766,7 @@ ___
 
 #### Defined in
 
-[config.ts:365](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L365)
+
 
 ___
 
@@ -839,7 +776,7 @@ ___
 
 #### Defined in
 
-[config.ts:389](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L389)
+
 
 ___
 
@@ -849,7 +786,7 @@ ___
 
 #### Defined in
 
-[config.ts:391](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L391)
+
 
 ___
 
@@ -859,7 +796,7 @@ ___
 
 #### Defined in
 
-[config.ts:388](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L388)
+
 
 ___
 
@@ -869,7 +806,7 @@ ___
 
 #### Defined in
 
-[config.ts:366](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L366)
+
 
 ___
 
@@ -879,7 +816,7 @@ ___
 
 #### Defined in
 
-[config.ts:357](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L357)
+
 
 ___
 
@@ -889,7 +826,7 @@ ___
 
 #### Defined in
 
-[config.ts:361](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L361)
+
 
 ___
 
@@ -899,7 +836,7 @@ ___
 
 #### Defined in
 
-[config.ts:362](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L362)
+
 
 ___
 
@@ -909,7 +846,7 @@ ___
 
 #### Defined in
 
-[config.ts:364](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L364)
+
 
 ___
 
@@ -917,39 +854,6 @@ ___
 
 ▪ `Static` `Readonly` **MAXPERREQUEST\_DEFAULT**: ``100``
 
-#### Defined in
-
-[config.ts:360](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L360)
-
-___
-
-### MAX\_ACCOUNT\_RANGE
-
-▪ `Static` `Readonly` **MAX\_ACCOUNT\_RANGE**: `bigint`
-
-#### Defined in
-
-[config.ts:379](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L379)
-
-___
-
-### MAX\_INVALID\_BLOCKS\_ERROR\_CACHE
-
-▪ `Static` `Readonly` **MAX\_INVALID\_BLOCKS\_ERROR\_CACHE**: ``128``
-
-#### Defined in
-
-[config.ts:383](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L383)
-
-___
-
-### MAX\_RANGE\_BYTES
-
-▪ `Static` `Readonly` **MAX\_RANGE\_BYTES**: ``50000``
-
-#### Defined in
-
-[config.ts:377](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L377)
 
 ___
 
@@ -959,7 +863,7 @@ ___
 
 #### Defined in
 
-[config.ts:381](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L381)
+
 
 ___
 
@@ -969,7 +873,7 @@ ___
 
 #### Defined in
 
-[config.ts:363](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L363)
+
 
 ___
 
@@ -979,7 +883,7 @@ ___
 
 #### Defined in
 
-[config.ts:367](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L367)
+
 
 ___
 
@@ -989,7 +893,7 @@ ___
 
 #### Defined in
 
-[config.ts:359](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L359)
+
 
 ___
 
@@ -999,7 +903,7 @@ ___
 
 #### Defined in
 
-[config.ts:384](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L384)
+
 
 ___
 
@@ -1009,7 +913,7 @@ ___
 
 #### Defined in
 
-[config.ts:373](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L373)
+
 
 ___
 
@@ -1019,7 +923,7 @@ ___
 
 #### Defined in
 
-[config.ts:374](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L374)
+
 
 ___
 
@@ -1029,7 +933,7 @@ ___
 
 #### Defined in
 
-[config.ts:375](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L375)
+
 
 ___
 
@@ -1039,7 +943,7 @@ ___
 
 #### Defined in
 
-[config.ts:392](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L392)
+
 
 ___
 
@@ -1049,7 +953,7 @@ ___
 
 #### Defined in
 
-[config.ts:395](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L395)
+
 
 ___
 
@@ -1059,7 +963,7 @@ ___
 
 #### Defined in
 
-[config.ts:369](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L369)
+
 
 ___
 
@@ -1069,7 +973,7 @@ ___
 
 #### Defined in
 
-[config.ts:386](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L386)
+
 
 ___
 
@@ -1079,7 +983,7 @@ ___
 
 #### Defined in
 
-[config.ts:356](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L356)
+
 
 ___
 
@@ -1089,7 +993,7 @@ ___
 
 #### Defined in
 
-[config.ts:371](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L371)
+
 
 ## Methods
 
@@ -1111,7 +1015,7 @@ Returns the location for each [DataDirectory](../enums/DataDirectory.md)
 
 #### Defined in
 
-[config.ts:652](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L652)
+
 
 ___
 
@@ -1134,7 +1038,7 @@ is enabled based on chainName. `true` for goerli
 
 #### Defined in
 
-[config.ts:713](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L713)
+
 
 ___
 
@@ -1150,38 +1054,6 @@ Returns the network directory for the chain.
 
 #### Defined in
 
-[config.ts:644](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L644)
-
-___
-
-### superMsg
-
-▸ **superMsg**(`msgs`, `meta?`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `msgs` | `string` \| `string`[] |
-| `meta?` | `any` |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[config.ts:694](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L694)
-
-___
-
-### updateSynchronizedState
-
-▸ **updateSynchronizedState**(`latest?`, `emitSyncEvent?`): `void`
-
-Update the synchronized state of the chain
-
-**`Emits`**
 
 Event.SYNC_SYNCHRONIZED
 
@@ -1198,7 +1070,7 @@ Event.SYNC_SYNCHRONIZED
 
 #### Defined in
 
-[config.ts:585](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L585)
+
 
 ___
 
@@ -1221,7 +1093,7 @@ Gets the client private key from the config db.
 
 #### Defined in
 
-[config.ts:676](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L676)
+
 
 ___
 
@@ -1243,4 +1115,4 @@ Returns the config level db.
 
 #### Defined in
 
-[config.ts:669](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L669)
+

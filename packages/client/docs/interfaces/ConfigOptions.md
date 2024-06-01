@@ -23,7 +23,7 @@
 - [engineParentLookupMaxDepth](ConfigOptions.md#engineparentlookupmaxdepth)
 - [execution](ConfigOptions.md#execution)
 - [extIP](ConfigOptions.md#extip)
-- [ignoreStatelessInvalidExecs](ConfigOptions.md#ignorestatelessinvalidexecs)
+
 - [isSingleNode](ConfigOptions.md#issinglenode)
 - [key](ConfigOptions.md#key)
 - [lightserv](ConfigOptions.md#lightserv)
@@ -43,7 +43,7 @@
 - [numBlocksPerIteration](ConfigOptions.md#numblocksperiteration)
 - [port](ConfigOptions.md#port)
 - [prefixStorageTrieKeys](ConfigOptions.md#prefixstoragetriekeys)
-- [prometheusMetrics](ConfigOptions.md#prometheusmetrics)
+
 - [pruneEngineCache](ConfigOptions.md#pruneenginecache)
 - [safeReorgDistance](ConfigOptions.md#safereorgdistance)
 - [savePreimages](ConfigOptions.md#savepreimages)
@@ -53,7 +53,7 @@
 - [skeletonSubchainMergeMinimum](ConfigOptions.md#skeletonsubchainmergeminimum)
 - [snapAvailabilityDepth](ConfigOptions.md#snapavailabilitydepth)
 - [snapTransitionSafeDepth](ConfigOptions.md#snaptransitionsafedepth)
-- [startExecution](ConfigOptions.md#startexecution)
+
 - [statelessVerkle](ConfigOptions.md#statelessverkle)
 - [storageCache](ConfigOptions.md#storagecache)
 - [syncedStateRemovalPeriod](ConfigOptions.md#syncedstateremovalperiod)
@@ -75,7 +75,7 @@ Size for the account cache (max number of accounts)
 
 #### Defined in
 
-[config.ts:199](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L199)
+
 
 ___
 
@@ -90,7 +90,7 @@ Default: []
 
 #### Defined in
 
-[config.ts:269](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L269)
+
 
 ___
 
@@ -103,7 +103,7 @@ Network bootnodes
 
 #### Defined in
 
-[config.ts:96](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L96)
+
 
 ___
 
@@ -115,7 +115,7 @@ Size for the code cache (max number of contracts)
 
 #### Defined in
 
-[config.ts:209](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L209)
+
 
 ___
 
@@ -130,7 +130,7 @@ Default: 'mainnet' Common
 
 #### Defined in
 
-[config.ts:36](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L36)
+
 
 ___
 
@@ -142,7 +142,7 @@ Root data directory for the blockchain
 
 #### Defined in
 
-[config.ts:83](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L83)
+
 
 ___
 
@@ -158,7 +158,7 @@ EthereumJS VM on execution errors
 
 #### Defined in
 
-[config.ts:223](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L223)
+
 
 ___
 
@@ -172,7 +172,7 @@ Default: `true` for testnets, false for mainnet
 
 #### Defined in
 
-[config.ts:230](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L230)
+
 
 ___
 
@@ -186,7 +186,7 @@ Default: `false` for testnets, true for mainnet
 
 #### Defined in
 
-[config.ts:237](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L237)
+
 
 ___
 
@@ -200,7 +200,7 @@ Default `8.8.8.8` (Google)
 
 #### Defined in
 
-[config.ts:179](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L179)
+
 
 ___
 
@@ -212,7 +212,7 @@ EIP-1459 ENR Tree urls to query via DNS for peer discovery
 
 #### Defined in
 
-[config.ts:184](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L184)
+
 
 ___
 
@@ -226,7 +226,7 @@ Default: false
 
 #### Defined in
 
-[config.ts:50](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L50)
+
 
 ___
 
@@ -238,7 +238,7 @@ Max blocks including unexecuted parents to be executed in engine's newPayload
 
 #### Defined in
 
-[config.ts:313](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L313)
+
 
 ___
 
@@ -250,7 +250,7 @@ Limit max transactions per block to execute in engine's newPayload for responsiv
 
 #### Defined in
 
-[config.ts:318](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L318)
+
 
 ___
 
@@ -262,7 +262,7 @@ Max depth for parent lookups in engine's newPayload and forkchoiceUpdated
 
 #### Defined in
 
-[config.ts:308](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L308)
+
 
 ___
 
@@ -274,7 +274,7 @@ Start continuous VM execution (pre-Merge setting)
 
 #### Defined in
 
-[config.ts:189](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L189)
+
 
 ___
 
@@ -286,31 +286,12 @@ RLPx external IP
 
 #### Defined in
 
-[config.ts:108](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L108)
-
-___
-
-### ignoreStatelessInvalidExecs
-
-• `Optional` **ignoreStatelessInvalidExecs**: `string` \| `boolean`
-
-#### Defined in
-
-[config.ts:340](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L340)
-
-___
-
-### isSingleNode
-
-• `Optional` **isSingleNode**: `boolean`
-
-Is a single node and doesn't need peers for synchronization
 
 Default: `false`
 
 #### Defined in
 
-[config.ts:251](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L251)
+
 
 ___
 
@@ -324,7 +305,7 @@ If left blank, a random key will be generated and used.
 
 #### Defined in
 
-[config.ts:90](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L90)
+
 
 ___
 
@@ -338,7 +319,7 @@ Default: `false`
 
 #### Defined in
 
-[config.ts:78](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L78)
+
 
 ___
 
@@ -353,7 +334,7 @@ Default: Logger with loglevel 'info'
 
 #### Defined in
 
-[config.ts:139](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L139)
+
 
 ___
 
@@ -363,7 +344,7 @@ ___
 
 #### Defined in
 
-[config.ts:299](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L299)
+
 
 ___
 
@@ -377,7 +358,7 @@ Default: `100`
 
 #### Defined in
 
-[config.ts:153](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L153)
+
 
 ___
 
@@ -389,7 +370,7 @@ Max outgoing multi-peer requests by the fetcher at any given time
 
 #### Defined in
 
-[config.ts:158](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L158)
+
 
 ___
 
@@ -401,7 +382,7 @@ Cache size of invalid block hashes and their errors
 
 #### Defined in
 
-[config.ts:325](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L325)
+
 
 ___
 
@@ -415,7 +396,7 @@ Default: `25`
 
 #### Defined in
 
-[config.ts:172](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L172)
+
 
 ___
 
@@ -429,7 +410,7 @@ Default: `100`
 
 #### Defined in
 
-[config.ts:146](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L146)
+
 
 ___
 
@@ -439,7 +420,7 @@ ___
 
 #### Defined in
 
-[config.ts:297](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L297)
+
 
 ___
 
@@ -449,7 +430,7 @@ ___
 
 #### Defined in
 
-[config.ts:320](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L320)
+
 
 ___
 
@@ -463,7 +444,7 @@ Default: `1`
 
 #### Defined in
 
-[config.ts:165](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L165)
+
 
 ___
 
@@ -477,7 +458,7 @@ Default: `false`
 
 #### Defined in
 
-[config.ts:244](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L244)
+
 
 ___
 
@@ -490,7 +471,7 @@ If not provided, defaults to the primary account.
 
 #### Defined in
 
-[config.ts:275](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L275)
+
 
 ___
 
@@ -503,7 +484,7 @@ Network multiaddrs for libp2p
 
 #### Defined in
 
-[config.ts:114](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L114)
+
 
 ___
 
@@ -515,7 +496,7 @@ Number of blocks to execute in batch mode and logged to console
 
 #### Defined in
 
-[config.ts:194](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L194)
+
 
 ___
 
@@ -529,7 +510,7 @@ Default: `30303`
 
 #### Defined in
 
-[config.ts:103](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L103)
+
 
 ___
 
@@ -544,19 +525,7 @@ Default: true
 
 #### Defined in
 
-[config.ts:58](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L58)
 
-___
-
-### prometheusMetrics
-
-• `Optional` **prometheusMetrics**: `PrometheusMetrics`
-
-Enables Prometheus Metrics that can be collected for monitoring client health
-
-#### Defined in
-
-[config.ts:345](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L345)
 
 ___
 
@@ -566,7 +535,7 @@ ___
 
 #### Defined in
 
-[config.ts:326](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L326)
+
 
 ___
 
@@ -579,7 +548,7 @@ to try to refetch and refeed the blocks.
 
 #### Defined in
 
-[config.ts:281](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L281)
+
 
 ___
 
@@ -591,7 +560,7 @@ Save account keys preimages in the meta db (default: false)
 
 #### Defined in
 
-[config.ts:333](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L333)
+
 
 ___
 
@@ -603,7 +572,7 @@ Save tx receipts and logs in the meta db (default: false)
 
 #### Defined in
 
-[config.ts:125](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L125)
+
 
 ___
 
@@ -616,7 +585,7 @@ Only used for testing purposes
 
 #### Defined in
 
-[config.ts:120](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L120)
+
 
 ___
 
@@ -630,7 +599,7 @@ to backstep and fill again using reverse block fetcher.
 
 #### Defined in
 
-[config.ts:288](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L288)
+
 
 ___
 
@@ -644,7 +613,7 @@ reset
 
 #### Defined in
 
-[config.ts:295](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L295)
+
 
 ___
 
@@ -654,7 +623,7 @@ ___
 
 #### Defined in
 
-[config.ts:327](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L327)
+
 
 ___
 
@@ -664,17 +633,7 @@ ___
 
 #### Defined in
 
-[config.ts:328](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L328)
 
-___
-
-### startExecution
-
-• `Optional` **startExecution**: `boolean`
-
-#### Defined in
-
-[config.ts:339](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L339)
 
 ___
 
@@ -686,7 +645,7 @@ Enables stateless verkle block execution (default: false)
 
 #### Defined in
 
-[config.ts:338](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L338)
+
 
 ___
 
@@ -698,7 +657,7 @@ Size for the storage cache (max number of contracts)
 
 #### Defined in
 
-[config.ts:204](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L204)
+
 
 ___
 
@@ -710,7 +669,7 @@ The time after which synced state is downgraded to unsynced
 
 #### Defined in
 
-[config.ts:303](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L303)
+
 
 ___
 
@@ -724,19 +683,17 @@ Default: 'full'
 
 #### Defined in
 
-[config.ts:43](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L43)
+
 
 ___
 
 ### trieCache
 
-• `Optional` **trieCache**: `number`
-
 Size for the trie cache (max number of trie nodes)
 
 #### Defined in
 
-[config.ts:214](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L214)
+
 
 ___
 
@@ -749,7 +706,7 @@ Number of recent blocks to maintain transactions index for
 
 #### Defined in
 
-[config.ts:131](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L131)
+
 
 ___
 
@@ -762,7 +719,7 @@ trie items as `string`, instead of the more performant `Uint8Array`
 
 #### Defined in
 
-[config.ts:64](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L64)
+
 
 ___
 
@@ -776,7 +733,7 @@ Default: VM instance created by client
 
 #### Defined in
 
-[config.ts:71](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L71)
+
 
 ___
 
@@ -788,7 +745,7 @@ Whether to profile VM blocks
 
 #### Defined in
 
-[config.ts:256](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L256)
+
 
 ___
 
@@ -800,4 +757,4 @@ Whether to profile VM txs
 
 #### Defined in
 
-[config.ts:261](https://github.com/Dargon789/Ethereumjs-Webserver/blob/master/packages/client/src/config.ts#L261)
+
