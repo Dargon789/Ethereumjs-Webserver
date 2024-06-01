@@ -173,24 +173,16 @@ export type EVMProfilerOpts = {
  */
 export interface EVMOpts {
   /**
-   * The BN128 curve package (`rustbn-wasm`)
-   */
-  bn128?: {
-    ec_pairing: (input_str: string) => string
-    ec_add: (input_str: string) => string
-    ec_mul: (input_hex: string) => string
-  }
-  /**
    * Use a {@link Common} instance for EVM instantiation.
    *
    * ### Supported EIPs
    *
    * - [EIP-1153](https://eips.ethereum.org/EIPS/eip-1153) - Transient storage opcodes (Cancun)
    * - [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) - Fee market change for ETH 1.0 chain
-   * - [EIP-2315](https://eips.ethereum.org/EIPS/eip-2315) - Simple subroutines for the EVM (`outdated`)
    * - [EIP-2537](https://eips.ethereum.org/EIPS/eip-2537) - BLS precompiles (removed in v4.0.0, see latest v3 release)
    * - [EIP-2565](https://eips.ethereum.org/EIPS/eip-2565) - ModExp gas cost
    * - [EIP-2718](https://eips.ethereum.org/EIPS/eip-2565) - Transaction Types
+   * - [EIP-2935](https://eips.ethereum.org/EIPS/eip-2935) - Save historical block hashes in state (`experimental`)
    * - [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929) - gas cost increases for state access opcodes
    * - [EIP-2930](https://eips.ethereum.org/EIPS/eip-2930) - Optional access list tx type
    * - [EIP-3074](https://eips.ethereum.org/EIPS/eip-3074) - AUTH and AUTHCALL opcodes

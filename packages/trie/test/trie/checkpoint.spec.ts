@@ -6,8 +6,8 @@ import {
   hexToBytes,
   utf8ToBytes,
 } from '@ethereumjs/util'
-import { createHash } from 'crypto'
 import { keccak256 } from 'ethereum-cryptography/keccak.js'
+import { sha256 } from 'ethereum-cryptography/sha256.js'
 import { assert, describe, it } from 'vitest'
 
 import { ROOT_DB_KEY, Trie } from '../../src/index.js'
@@ -64,8 +64,7 @@ describe('testing checkpoints', () => {
   it('should copy trie and get upstream and cache values after checkpoint', async () => {
     trieCopy = trie.shallowCopy()
     assert.equal(bytesToHex(trieCopy.root()), postRoot)
-    // @ts-expect-error
-    assert.equal(trieCopy._db.checkpoints.length, 1)
+    assert.equal(trieCopy['_db'].checkpoints.length, 1)
     assert.ok(trieCopy.hasCheckpoints())
     const res = await trieCopy.get(utf8ToBytes('do'))
     assert.ok(equalsBytes(utf8ToBytes('verb'), res!))
@@ -77,7 +76,7 @@ describe('testing checkpoints', () => {
     const trie = new Trie({
       db: new MapDB(),
       useKeyHashing: true,
-      useKeyHashingFunction: (value) => createHash('sha256').update(value).digest(),
+      useKeyHashingFunction: sha256,
     })
 
     await trie.put(utf8ToBytes('key1'), utf8ToBytes('value1'))
@@ -234,8 +233,7 @@ describe('testing checkpoints', () => {
     // The CommittedState should not change (not the key/value pairs, not the root, and not the root in DB)
     assert.equal(bytesToUtf8((await CommittedState.get(KEY))!), '1')
     assert.equal(
-      // @ts-expect-error
-      bytesToHex(await CommittedState._db.get(KEY_ROOT)),
+      bytesToHex((await CommittedState['_db'].get(KEY_ROOT))!),
       '0x77ddd505d2a5b76a2a6ee34b827a0d35ca19f8d358bee3d74a84eab59794487c'
     )
     assert.equal(
@@ -244,9 +242,9 @@ describe('testing checkpoints', () => {
     )
 
     // From MemoryState, now take the final checkpoint
-    const finalCheckpoint = (<any>MemoryState)._db.checkpoints[0]
+    const finalCheckpoint = MemoryState['_db'].checkpoints[0]
     // Insert this into CommittedState
-    ;(<any>CommittedState)._db.checkpoints.push(finalCheckpoint)
+    CommittedState['_db'].checkpoints.push(finalCheckpoint)
 
     // Now all operations done on MemoryState (including pruning) can be
     // committed into CommittedState
