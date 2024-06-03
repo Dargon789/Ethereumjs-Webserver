@@ -1,11 +1,14 @@
 import { EOF } from './eof.js'
 import { EVM } from './evm.js'
 import { ERROR as EVMErrorMessage, EvmError } from './exceptions.js'
-import { InterpreterStep } from './interpreter.js'
 import { Message } from './message.js'
-import { PrecompileInput, getActivePrecompiles } from './precompiles/index.js'
-import {
+import { getOpcodesForHF } from './opcodes/index.js'
+import { type PrecompileInput, getActivePrecompiles } from './precompiles/index.js'
+
+import type { InterpreterStep } from './interpreter.js'
+import type {
   EVMInterface,
+  EVMOpts,
   EVMResult,
   EVMRunCallOpts,
   EVMRunCodeOpts,
@@ -13,20 +16,18 @@ import {
   Log,
   bn128,
 } from './types.js'
-export {
+
+export type {
   bn128,
-  EOF,
-  EVM,
-  EvmError,
-  EVMErrorMessage,
   EVMInterface,
+  EVMOpts,
   EVMResult,
   EVMRunCallOpts,
   EVMRunCodeOpts,
   ExecResult,
-  getActivePrecompiles,
   InterpreterStep,
   Log,
-  Message,
   PrecompileInput,
 }
+
+export { EOF, EVM, EvmError, EVMErrorMessage, getActivePrecompiles, getOpcodesForHF, Message }

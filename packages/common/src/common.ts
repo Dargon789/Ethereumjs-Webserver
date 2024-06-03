@@ -39,7 +39,7 @@ import type {
 import type { BigIntLike, PrefixedHexString } from '@ethereumjs/util'
 
 type HardforkSpecKeys = string // keyof typeof HARDFORK_SPECS
-type HardforkSpecValues = typeof HARDFORK_SPECS[HardforkSpecKeys]
+type HardforkSpecValues = (typeof HARDFORK_SPECS)[HardforkSpecKeys]
 
 type ParamsCacheConfig = Omit<EIPOrHFConfig, 'comment' | 'url' | 'status'>
 
@@ -157,8 +157,7 @@ export class Common {
             chainId: 69,
             networkId: 69,
           },
-          // Optimism has not implemented the London hardfork yet (targeting Q1.22)
-          { hardfork: Hardfork.Berlin, ...opts }
+          opts
         )
       }
 
