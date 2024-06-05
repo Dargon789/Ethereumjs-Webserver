@@ -16,8 +16,6 @@
   },
   "license": "MIT",
   "author": "g11tech <gajinder@g11.in>",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
   "type": "commonjs",
   "exports": {
     ".": {
@@ -37,6 +35,8 @@
       "require": "./dist/cjs/genesisStates/sepolia.js"
     }
   },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "files": [
     "dist",
     "src"
@@ -45,9 +45,9 @@
     "build": "../../config/cli/ts-build.sh",
     "clean": "../../config/cli/clean-package.sh",
     "coverage": "../../config/cli/coverage.sh",
+    "docs:build": "typedoc --options typedoc.cjs",
     "examples": "tsx ../../scripts/examples-runner.ts -- genesis",
     "examples:build": "npx embedme README.md",
-    "docs:build": "typedoc --options typedoc.cjs",
     "lint": "../../config/cli/lint.sh",
     "lint:diff": "../../config/cli/lint-diff.sh",
     "lint:fix": "../../config/cli/lint-fix.sh",
@@ -61,10 +61,10 @@
     "@ethereumjs/common": "^4.3.0",
     "@ethereumjs/util": "^9.0.3"
   },
-  "engines": {
-    "node": ">=18"
-  },
   "devDependencies": {
     "@ethereumjs/trie": "^6.2.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
