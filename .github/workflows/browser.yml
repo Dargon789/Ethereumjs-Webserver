@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: recursive # necessary for block tests to load ethereum/tests
-          
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
@@ -48,5 +48,3 @@ jobs:
       - run: npm run test:browser -w=@ethereumjs/evm
       - run: npm run test:browser -w=@ethereumjs/vm
       - run: npm run test:browser -w=@ethereumjs/verkle
-
-
