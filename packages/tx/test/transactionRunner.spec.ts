@@ -1,6 +1,7 @@
 import { Common } from '@ethereumjs/common'
 import { bytesToHex, toBytes } from '@ethereumjs/util'
 import minimist from 'minimist'
+import _ from 'lodash'
 import { assert, describe, it } from 'vitest'
 import _ from 'lodash'
 
