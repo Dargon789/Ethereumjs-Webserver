@@ -4,6 +4,9 @@ on:
     types: [opened, reopened, synchronize]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 env:
   cwd: ${{github.workspace}}/packages/vm
 
@@ -176,6 +179,9 @@ jobs:
 
   vm-benchmarks:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
 
