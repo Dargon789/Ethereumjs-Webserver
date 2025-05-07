@@ -39,7 +39,7 @@ import type {
 import type { BigIntLike, PrefixedHexString } from '@ethereumjs/util'
 
 type HardforkSpecKeys = string // keyof typeof HARDFORK_SPECS
-type HardforkSpecValues = (typeof HARDFORK_SPECS)[HardforkSpecKeys]
+type HardforkSpecValues = typeof HARDFORK_SPECS[HardforkSpecKeys]
 
 type ParamsCacheConfig = Omit<EIPOrHFConfig, 'comment' | 'url' | 'status'>
 

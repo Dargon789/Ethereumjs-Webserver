@@ -106,12 +106,12 @@ describe('[BeaconSynchronizer]', async () => {
     const pool = new PeerPool() as any
     const chain = await Chain.create({ config })
     const skeleton = new Skeleton({ chain, config, metaDB: new MemoryLevel() })
-    skeleton['getSyncStatus'] = td.func<(typeof skeleton)['getSyncStatus']>()
+    skeleton['getSyncStatus'] = td.func<typeof skeleton['getSyncStatus']>()
     await skeleton.open()
 
     const sync = new BeaconSynchronizer({ config, pool, chain, execution, skeleton })
-    sync.best = td.func<(typeof sync)['best']>()
-    sync.latest = td.func<(typeof sync)['latest']>()
+    sync.best = td.func<typeof sync['best']>()
+    sync.latest = td.func<typeof sync['latest']>()
     td.when(sync.best()).thenResolve('peer')
     td.when(sync.latest('peer' as any)).thenResolve({
       number: BigInt(2),
@@ -158,11 +158,11 @@ describe('[BeaconSynchronizer]', async () => {
     const pool = new PeerPool() as any
     const chain = await Chain.create({ config })
     const skeleton = new Skeleton({ chain, config, metaDB: new MemoryLevel() })
-    skeleton['getSyncStatus'] = td.func<(typeof skeleton)['getSyncStatus']>()
+    skeleton['getSyncStatus'] = td.func<typeof skeleton['getSyncStatus']>()
     await skeleton.open()
     const sync = new BeaconSynchronizer({ config, pool, chain, execution, skeleton })
-    sync.best = td.func<(typeof sync)['best']>()
-    sync.latest = td.func<(typeof sync)['latest']>()
+    sync.best = td.func<typeof sync['best']>()
+    sync.latest = td.func<typeof sync['latest']>()
     td.when(sync.best()).thenResolve('peer')
     td.when(sync.latest('peer' as any)).thenResolve({
       number: BigInt(2),

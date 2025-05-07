@@ -4,7 +4,4 @@ about: Create issue for @ethereumjs/tx package
 title: ''
 labels: ''
 assignees: ''
-
 ---
-
-

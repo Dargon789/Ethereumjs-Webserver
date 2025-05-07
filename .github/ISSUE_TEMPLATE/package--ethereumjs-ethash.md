@@ -4,7 +4,4 @@ about: Create issue for @ethereumjs/ethash
 title: ''
 labels: ''
 assignees: ''
-
 ---
-
-

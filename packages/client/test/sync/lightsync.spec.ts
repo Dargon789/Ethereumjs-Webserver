@@ -71,8 +71,8 @@ describe('[LightSynchronizer]', async () => {
       pool,
       chain,
     })
-    sync.best = td.func<(typeof sync)['best']>()
-    sync.latest = td.func<(typeof sync)['latest']>()
+    sync.best = td.func<typeof sync['best']>()
+    sync.latest = td.func<typeof sync['latest']>()
     td.when(sync.best()).thenResolve({ les: { status: { headNum: BigInt(2) } } } as any)
     td.when(sync.latest(td.matchers.anything())).thenResolve({
       number: BigInt(2),
@@ -108,8 +108,8 @@ describe('sync errors', async () => {
     pool,
     chain,
   })
-  sync.best = td.func<(typeof sync)['best']>()
-  sync.latest = td.func<(typeof sync)['latest']>()
+  sync.best = td.func<typeof sync['best']>()
+  sync.latest = td.func<typeof sync['latest']>()
   td.when(sync.best()).thenResolve({ les: { status: { headNum: BigInt(2) } } } as any)
   td.when(sync.latest(td.matchers.anything())).thenResolve({
     number: BigInt(2),
@@ -152,8 +152,8 @@ describe('import headers', () => {
       pool,
       chain,
     })
-    sync.best = td.func<(typeof sync)['best']>()
-    sync.latest = td.func<(typeof sync)['latest']>()
+    sync.best = td.func<typeof sync['best']>()
+    sync.latest = td.func<typeof sync['latest']>()
     td.when(sync.best()).thenResolve({ les: { status: { headNum: BigInt(2) } } } as any)
     td.when(sync.latest(td.matchers.anything())).thenResolve({
       number: BigInt(2),

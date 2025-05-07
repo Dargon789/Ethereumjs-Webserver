@@ -4,7 +4,4 @@ about: Create issue for @ethereumjs/util package
 title: ''
 labels: ''
 assignees: ''
-
 ---
-
-

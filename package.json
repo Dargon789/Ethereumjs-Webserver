@@ -17,9 +17,12 @@
     "install-browser-deps": "npm install webdriverio @vitest/browser web-streams-polyfill",
     "prepare": "git config --local core.hooksPath .githooks",
     "prettier": "prettier --write \"./**/*.{js,json,md,ts,yml}\"",
-    "sort-package-json": "sort-package-json \"package.json\" \"packages/*/package.json\""
+    "sort-package-json": "sort-package-json \"package.json\" \"packages/*/package.json\"",
+    "vercel-build": "next build"
   },
   "dependencies": {
+    "@vercel/blob": "^1.0.1",
+    "next": "^15.3.2",
     "web-streams-polyfill": "^4.1.0"
   },
   "devDependencies": {
@@ -45,6 +48,7 @@
     "eslint-plugin-sonarjs": "0.19.0",
     "lint-staged": "13.0.3",
     "lockfile-lint-api": "^5.5.1",
+    "nx": "20.8.1",
     "prettier": "2.7.1",
     "sort-package-json": "1.57.0",
     "tape": "5.6.0",
@@ -55,11 +59,11 @@
     "vite-plugin-node-polyfills": "^0.21.0",
     "vite-plugin-top-level-await": "^1.4.1",
     "vite-plugin-wasm": "^3.3.0",
-    "vitest": "^1.2.2"
+    "vitest": "^1.6.1"
   },
   "peerDependencies": {
     "@vitest/browser": "^1.5.0",
-    "webdriverio": "^8.38.2"
+    "webdriverio": "^8.44.1"
   },
   "peerDependenciesMeta": {
     "@vitest/browser": {

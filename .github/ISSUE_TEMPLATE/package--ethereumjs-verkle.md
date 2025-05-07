@@ -4,7 +4,4 @@ about: Create issue for @ethereumjs/verkle package
 title: ''
 labels: ''
 assignees: ''
-
 ---
-
-

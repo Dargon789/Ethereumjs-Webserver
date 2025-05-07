@@ -4,7 +4,4 @@ about: Create issue for @ethereumjs/evm package
 title: ''
 labels: ''
 assignees: ''
-
 ---
-
-

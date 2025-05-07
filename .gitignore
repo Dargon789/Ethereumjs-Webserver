@@ -111,3 +111,10 @@ datadir*
 
 ## Vitest
 __snapshots__
+.vercel
+.env*.local
+
+
+
+.nx/cache
+.nx/workspace-data
