@@ -113,7 +113,9 @@ jobs:
           auto-push: 'true'
           # Only keep and display the last 30 commits worth of benchmark data
           max-items-in-chart: 30
-
+      - name: Fetch repository branch
+        run: |
+            git fetch origin main:main
       # Re-apply git stash to prepare for saving back to cache.
       # Avoids exit code 1 by checking if there are changes to be stashed first
       - run: STASH_LIST=`git stash list` && [ ! -z $STASH_LIST ] && git stash apply || echo "No files to stash-apply. Skipping…"
