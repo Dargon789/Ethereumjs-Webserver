@@ -67,3 +67,4 @@ jobs:
       - run: npx playwright install --with-deps
 
       - run: npm run test:browser --workspaces --if-present
+
