@@ -1,15 +1,40 @@
+codecov:
+  notify:
+    wait_for_ci: true
+  require_ci_to_pass: true
+comment:
+  behavior: default
+  layout: reach, flags
+  show_carryforward_flags: false
 coverage:
+  precision: 2
+  range:
+  - 60.0
+  - 80.0
+  round: down
   status:
-    project:
-      default:
-        target: auto
-        threshold: 2%
+    changes: false
+    default_rules:
+      flag_coverage_not_uploaded_behavior: include
     patch:
       default:
         target: auto
-        threshold: 5%
-comment:
-  layout: 'reach, flags'
+        threshold: 5.0
+    project:
+      default:
+        target: auto
+        threshold: 2.0
 flags:
   rlp:
     carryforward: true
+github_checks:
+  annotations: true
+slack_app: true
+to_string: "codecov:\n  notify:\n    wait_for_ci: true\n  require_ci_to_pass: true\n\
+  comment:\n  behavior: default\n  layout: reach, flags\n  show_carryforward_flags:\
+  \ false\ncoverage:\n  precision: 2\n  range:\n  - 60.0\n  - 80.0\n  round: down\n\
+  \  status:\n    changes: false\n    default_rules:\n      flag_coverage_not_uploaded_behavior:\
+  \ include\n    patch:\n      default:\n        target: auto\n        threshold:\
+  \ 5.0\n    project:\n      default:\n        target: auto\n        threshold: 2.0\n\
+  flags:\n  rlp:\n    carryforward: true\ngithub_checks:\n  annotations: true\nslack_app:\
+  \ true\n"
