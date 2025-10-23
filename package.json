@@ -41,7 +41,7 @@
     "eslint-plugin-sonarjs": "0.19.0",
     "kzg-wasm": "^0.2.0",
     "lint-staged": "13.0.3",
-    "lockfile-lint-api": "^5.5.1",
+    "lockfile-lint-api": "^5.9.2",
     "prettier": "2.7.1",
     "sort-package-json": "1.57.0",
     "tape": "5.6.0",
