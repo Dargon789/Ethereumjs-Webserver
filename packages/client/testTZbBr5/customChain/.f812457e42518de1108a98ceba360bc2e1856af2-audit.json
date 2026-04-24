@@ -1,0 +1,15 @@
+{
+  "keep": {
+    "days": false,
+    "amount": 5
+  },
+  "auditLog": "testTZbBr5/customChain/.f812457e42518de1108a98ceba360bc2e1856af2-audit.json",
+  "files": [
+    {
+      "date": 1717231907296,
+      "name": "testTZbBr5/customChain/ethereumjs.2024-06-01.log",
+      "hash": "cd766c29d063d8540d671f717d0d8a59ad7af14a0e591fdde94f5d3a0662d255"
+    }
+  ],
+  "hashType": "sha256"
+}

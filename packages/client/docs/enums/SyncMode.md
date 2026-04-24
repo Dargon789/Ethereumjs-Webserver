@@ -8,6 +8,7 @@
 
 - [Full](SyncMode.md#full)
 - [Light](SyncMode.md#light)
+- [None](SyncMode.md#none)
 
 ## Enumeration Members
 
@@ -17,7 +18,7 @@
 
 #### Defined in
 
-[config.ts:23](https://github.com/ethereumjs/ethereumjs-monorepo/blob/master/packages/client/lib/config.ts#L23)
+
 
 ___
 
@@ -27,4 +28,14 @@ ___
 
 #### Defined in
 
-[config.ts:24](https://github.com/ethereumjs/ethereumjs-monorepo/blob/master/packages/client/lib/config.ts#L24)
+
+
+___
+
+### None
+
+• **None** = ``"none"``
+
+#### Defined in
+
+

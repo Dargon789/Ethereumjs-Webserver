@@ -1,0 +1,6 @@
+[06-01|15:43:37] INFO Sync Mode full
+[06-01|15:43:37] INFO Reading custom genesis state accounts=1
+[06-01|15:43:37] INFO Data directory: /home/reconfigure/Library/Ethereum/ethereumjs
+[06-01|15:43:38] INFO Full sync mode
+[06-01|15:43:38] INFO Initializing Ethereumjs client version=v0.10.1 network=devnet chainId=123456
+[06-01|15:43:38] INFO Preparing for sync using FullEthereumService with FullSynchronizer.

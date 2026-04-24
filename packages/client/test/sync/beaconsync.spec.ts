@@ -106,18 +106,18 @@ describe('[BeaconSynchronizer]', async () => {
     const pool = new PeerPool() as any
     const chain = await Chain.create({ config })
     const skeleton = new Skeleton({ chain, config, metaDB: new MemoryLevel() })
-    skeleton['getSyncStatus'] = td.func<typeof skeleton['getSyncStatus']>()
+    skeleton['getSyncStatus'] = td.func<(typeof skeleton)['getSyncStatus']>()
     await skeleton.open()
 
     const sync = new BeaconSynchronizer({ config, pool, chain, execution, skeleton })
-    sync.best = td.func<typeof sync['best']>()
-    sync.latest = td.func<typeof sync['latest']>()
+    sync.best = td.func<(typeof sync)['best']>()
+    sync.latest = td.func<(typeof sync)['latest']>()
     td.when(sync.best()).thenResolve('peer')
     td.when(sync.latest('peer' as any)).thenResolve({
       number: BigInt(2),
       hash: () => new Uint8Array(0),
     })
-    td.when(ReverseBlockFetcher.prototype.fetch(), { delay: 100, times: 3 }).thenResolve(undefined)
+    td.when(ReverseBlockFetcher.prototype.fetch(), { delay: 100, times: 3 }).thenResolve(false)
     ;(skeleton as any).status.progress.subchains = [
       { head: BigInt(10), tail: BigInt(6) },
       { head: BigInt(4), tail: BigInt(2) },
@@ -158,17 +158,17 @@ describe('[BeaconSynchronizer]', async () => {
     const pool = new PeerPool() as any
     const chain = await Chain.create({ config })
     const skeleton = new Skeleton({ chain, config, metaDB: new MemoryLevel() })
-    skeleton['getSyncStatus'] = td.func<typeof skeleton['getSyncStatus']>()
+    skeleton['getSyncStatus'] = td.func<(typeof skeleton)['getSyncStatus']>()
     await skeleton.open()
     const sync = new BeaconSynchronizer({ config, pool, chain, execution, skeleton })
-    sync.best = td.func<typeof sync['best']>()
-    sync.latest = td.func<typeof sync['latest']>()
+    sync.best = td.func<(typeof sync)['best']>()
+    sync.latest = td.func<(typeof sync)['latest']>()
     td.when(sync.best()).thenResolve('peer')
     td.when(sync.latest('peer' as any)).thenResolve({
       number: BigInt(2),
       hash: () => new Uint8Array(0),
     })
-    td.when(ReverseBlockFetcher.prototype.fetch(), { delay: 100, times: 1 }).thenResolve(undefined)
+    td.when(ReverseBlockFetcher.prototype.fetch(), { delay: 100, times: 1 }).thenResolve(false)
     ;(skeleton as any).status.progress.subchains = [{ head: BigInt(10), tail: BigInt(6) }]
     ;(sync as any).chain = {
       // Make height > tail so that skeletonSubchainMergeMinimum is triggered
