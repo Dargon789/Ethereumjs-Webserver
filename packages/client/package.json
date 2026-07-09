@@ -73,7 +73,7 @@
     "@polkadot/util": "^12.6.2",
     "@polkadot/wasm-crypto": "^7.3.2",
     "abstract-level": "^1.0.3",
-    "body-parser": "^1.20.3",
+    "body-parser": "^1.20.5",
     "kzg-wasm": "^0.2.0",
     "chalk": "^4.1.2",
     "connect": "^3.7.0",
@@ -106,7 +106,7 @@
     "it-pushable": "^1.4.2",
     "testdouble": "^3.16.6",
     "testdouble-timers": "^0.1.1",
-    "ws": "^8.18.0"
+    "ws": "^8.21.0"
   },
   "engines": {
     "node": ">=18"
